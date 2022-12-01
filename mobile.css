@@ -1,0 +1,108 @@
+@media screen and (max-width:480px){
+
+    .header div a{
+        background-color: #069cb1;
+        margin: 5px 0;
+        padding: 14px 60px;
+        box-shadow: 0px 1px 9px 4px black;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #efecec;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .header div{
+        display: grid;
+        transition: 1s;
+        top: 65px;
+        position: absolute;
+        right: 102%;
+    }
+    .header img{
+        width: 43px;
+        height: auto;
+        position: absolute;
+        border-radius: 3px;
+        top: 16px;
+        display: block;
+        right: 10%;
+    }
+    .header img:hover + #navbar{
+        right: 10%;
+    }
+    .about-image img{
+        display: none;
+    }
+    .about-me{
+        padding-left: 0;
+        text-align: center;
+    }
+    .services {
+        margin-top: 16%;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .all-service{
+        display: block;
+    }
+    .service-details {
+        margin: 15px auto;
+        width: 94%;
+    }
+    .all-image{
+        display: block;
+    }
+    .work-image{
+        margin: 0 auto 30px;
+        width: 100%;
+    }
+    .layer{
+        top: 472px;
+    }
+    .contract{
+        display: block;
+        text-align: center;
+        padding-top: 2%;
+    }
+    .contract-info{
+        margin: auto;
+    }
+    .send {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .skill1 {
+        left: 105px;
+    }
+    .skill2 {
+        left: 68px;
+    }
+    .skill3 {
+        left: 25px;
+    }
+    #skill{
+        margin-left: 25px;
+    }
+    .portfolio{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

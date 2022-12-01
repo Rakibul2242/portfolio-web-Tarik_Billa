@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header span{
+    display: flex;
+}
+.header h2{
+    letter-spacing: 1px;
+}
+.header h2::first-letter{
+    color: red;
+}
+.header div{
+    display: inline-flex;
+}
+.header div a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-left: 35px;
+}
+.header div a::before {
+    position: absolute;
+    content:'';
+    transition: 1s;
+    background-color: red;
+    height: 3px;
+    border-radius: 2px;
+    width: 0;
+    top: 46px;
+  }
+  .header div a:hover::before{
+    width: 5%;
+  }
+
+  /*----------------Container-------------*/
+
+  .container{
+    margin: 0 10% ;
+    padding: 100px 0;
+    background: url(image/background.png);
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 570px auto;
+    background-repeat: no-repeat;
+  }
+  .container h1{
+    line-height: 47px;
+    margin-top: 0px;
+  }
+  .container span{
+    color: red;
+  }
+  
+  /*----------------about-------------*/
+  
+  .about{
+    margin: 0 10% 7%;
+    display: flex;
+    margin-bottom: 0;
+    padding-top: 7%;
+  }
+.about-image{
+    background-color: rgb(36, 35, 35);
+    border-radius: 5px;
+    height: fit-content;
+}
+.about-image img{
+    height: 408px;
+    width: 200px;
+    padding: 0 20px;
+}
+.about-me{
+    padding-left: 38px;
+    padding-bottom: 29%;
+    color: rgb(155 155 155);
+}
+.about-me h1{
+    font-size: 35px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.about-me p{
+    line-height: 16px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+ 
+  /*----------------Servics / Skill-------------*/
+  
+.quealification{
+    display: flex;
+}
+.skill p{
+    margin: 0;
+    margin-left: 25px;
+    background-color: #000;
+    color: #ffffffb8;
+    font-size: 14px;
+    display: inline;
+    cursor: pointer;
+}
+#skill{
+    margin-left: 0px;
+    padding-left: 0;
+}
+.skill-details{
+    position: absolute;
+    top: 20px;
+}
+.skill-details{
+    display: none;
+}
+.need-skill1{
+    display: block;
+}
+.skill-menu{
+    position: relative;
+}
+.skill-details p::first-line{
+    color: red;
+}
+.skill p:before{
+    position: absolute;
+    content: '';
+    transition: 1s;
+    background-color: red;
+    height: 3px;
+    border-radius: 5px;
+    width: 0px;
+    top: 30px;
+}
+.skill{
+    position: relative;
+    padding-top: 10px;
+}
+.skill p:hover:before{
+    width: 45px;
+}
+/*#skill::before{
+    width: 35px;
+}*/
+.services{
+    margin: 0 10%;
+    padding-top: 7%;
+}
+.services h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.all-service{
+    display: flex;
+    justify-content: space-between;
+}
+.service-details{
+    padding: 3%;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    width: 25%;
+    transition: 0.5s;
+}
+.service-details:hover{
+    background-color: rgb(252, 33, 33);
+    transform: translateY(-10px);
+}
+.service-details i{
+    font-size: 25px;
+}
+.service-details h5{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #ffffffdb;
+}
+.service-details p{
+    font-size: 13px;
+    color: #ffffffb5;
+}
+.service-details a{
+    color: #ffffffd1;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+  /*----------------portfolio-------------*/
+
+.portfolio{
+    margin: 0 10%;
+    padding-top: 5%;
+}
+.portfolio h2{
+    font-size: 30px;
+    position: relative;
+    padding: 15px 0 10px;
+}
+.all-image{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.work-image{
+    border-radius: 5px;
+    width: 31%;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.work-image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 500px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+}
+.work-image:hover img{
+    transform: scale(1.1);
+}
+.work-image:hover .layer{
+    top: 0;
+}
+.layer h4{
+    margin-top: 50px;
+    color: #ffffffcf;
+}
+.layer p{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    color: #ffffffd1;
+}
+.layer a{
+    color: red;
+    background-color: white;
+    padding: 10px 12px;
+    border-radius: 50%;
+    top: 23px;
+}
+.portfolio button{
+    margin: 5% auto;
+    color: white;
+    border: 1px solid #ff004f;
+    border-radius: 2px;
+    padding: 10px 25px;
+    cursor: pointer;
+    display: block;
+    background-color: #000;
+}
+.portfolio button:hover{
+    background-color: #ff004f;
+    border-radius: 3px;
+}
+
+/*----------------contract-------------*/
+
+.contract{
+    margin:8% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.contract-info h1{
+    font-size: 35px;
+    margin: 20px 0 32px;
+}
+.contract-info p{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #ffffffd4;
+    letter-spacing: 1px;
+}
+.contract-info p i{
+    font-size: 16px;
+    color: #ff004f;
+    margin-right: 7px;
+}
+.send{
+    width: 60%;
+}
+.send input,textarea{
+    display: block;
+    border: none;
+    margin-top: 15px;
+    font-family: monospace;
+    width: 94%;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.178);
+    letter-spacing: 1px;
+}
+.send button{
+    color: rgb(233, 232, 232);
+    background-color: #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 30px;
+}
+.contract-icon{
+    margin: 28px 0 41px;
+}
+.contract-icon a i{
+    color: rgb(175, 171, 171);
+    transition: 0.5s;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 19px;
+}
+.contract-icon a i:hover{
+    background-color: #000;
+    color: red;
+    transform: translateY(-3px);
+}
+.contract-info #cv{
+    color: rgb(233, 232, 232);
+    background-color: #ff004f;
+    padding: 14px 38px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 14px;
+    position: initial;
+}
+.contract-info #cv:hover{
+    background-color: #f00650;
+}
+.send button:hover{
+    background-color: #f00650;
+}
+#copyright{
+    letter-spacing: 1px;
+    display: block;
+    font-size: 11px;
+    color: #9f9a9a;
+    background-color: #2c2c2c;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img{
+    display: none;
+}
+/*
+
+
+#navbar{
+    display: none;
+}
+.header img{
+    width: 55px;
+    height: auto;
+    position: absolute;
+}
+.header img:hover + #navbar{
+    cursor: pointer;
+    display: block;
+}
